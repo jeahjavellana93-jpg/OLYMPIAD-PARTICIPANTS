@@ -1,0 +1,1025 @@
+/* =========================================================
+   IT OLYMPIAD 2026
+   COMPLETE MATCHING STYLE.CSS
+   Purple + Blue + Yellow Theme
+   ========================================================= */
+
+/* -------------------------
+   RESET
+------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f2f8;
+    color: #202024;
+    line-height: 1.5;
+}
+
+/* -------------------------
+   COLOR VARIABLES
+------------------------- */
+
+:root {
+    --purple: #6a1bb1;
+    --purple-dark: #3b096b;
+    --purple-light: #8e44d6;
+
+    --blue: #1666c5;
+    --blue-dark: #0c3d78;
+
+    --yellow: #f5c400;
+    --yellow-light: #ffe36e;
+
+    --white: #ffffff;
+    --black: #17131d;
+    --gray: #66636c;
+    --light-gray: #eeeeF2;
+    --border: #ddd9e5;
+
+    --green: #168542;
+    --green-light: #e7f7ed;
+
+    --red: #c62828;
+    --red-light: #fdeaea;
+
+    --shadow: 0 8px 25px rgba(46, 16, 74, 0.08);
+    --shadow-hover: 0 12px 30px rgba(46, 16, 74, 0.15);
+
+    --radius: 14px;
+}
+
+/* -------------------------
+   HEADER
+------------------------- */
+
+.main-header {
+    background:
+        linear-gradient(
+            135deg,
+            var(--purple-dark),
+            var(--purple),
+            var(--blue-dark)
+        );
+    color: white;
+    padding: 28px 20px;
+    border-bottom: 5px solid var(--yellow);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-area {
+    flex-shrink: 0;
+}
+
+.department-logo {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 7px;
+    border: 3px solid var(--yellow);
+}
+
+.header-text {
+    flex: 1;
+}
+
+.small-title {
+    color: var(--yellow-light);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+}
+
+.header-text h1 {
+    font-size: 34px;
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.header-text > p:last-child {
+    margin-top: 7px;
+    color: #eee8f7;
+    font-size: 15px;
+}
+
+/* -------------------------
+   MAIN CONTAINER
+------------------------- */
+
+.container {
+    width: min(1200px, 94%);
+    margin: 35px auto 50px;
+}
+
+/* -------------------------
+   WELCOME SECTION
+------------------------- */
+
+.welcome-section {
+    background: white;
+    border-radius: var(--radius);
+    padding: 28px 30px;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow);
+    border-left: 6px solid var(--purple);
+}
+
+.section-label {
+    display: inline-block;
+    color: var(--purple);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+.welcome-section h2,
+.section-heading h2,
+.participants-header h2 {
+    color: var(--black);
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+.welcome-section p {
+    color: var(--gray);
+    margin-top: 7px;
+    font-size: 14px;
+}
+
+/* -------------------------
+   STATISTICS
+------------------------- */
+
+.statistics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    box-shadow: var(--shadow);
+    border-top: 4px solid var(--purple);
+}
+
+.stat-card:nth-child(2) {
+    border-top-color: var(--green);
+}
+
+.stat-card:nth-child(3) {
+    border-top-color: var(--red);
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: #f0e7fa;
+    color: var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.paid-stat .stat-icon {
+    background: var(--green-light);
+    color: var(--green);
+}
+
+.unpaid-stat .stat-icon {
+    background: var(--red-light);
+    color: var(--red);
+}
+
+.stat-card span {
+    display: block;
+    color: var(--gray);
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.stat-card strong {
+    font-size: 28px;
+    color: var(--black);
+}
+
+/* -------------------------
+   SECTION HEADING
+------------------------- */
+
+.section-heading {
+    margin-bottom: 17px;
+}
+
+.section-heading h2 {
+    font-size: 23px;
+}
+
+/* -------------------------
+   YEAR LEVEL CARDS
+------------------------- */
+
+.year-section {
+    margin-bottom: 35px;
+}
+
+.year-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+}
+
+.year-card {
+    position: relative;
+    text-align: left;
+    border: 2px solid var(--border);
+    background: white;
+    border-radius: var(--radius);
+    padding: 20px 17px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: var(--shadow);
+    color: var(--black);
+}
+
+.year-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--purple-light);
+    box-shadow: var(--shadow-hover);
+}
+
+.year-card.active {
+    background:
+        linear-gradient(
+            135deg,
+            var(--purple-dark),
+            var(--purple)
+        );
+    border-color: var(--purple);
+    color: white;
+    box-shadow: 0 10px 25px rgba(106, 27, 177, 0.28);
+}
+
+.year-number {
+    display: block;
+    font-size: 12px;
+    font-weight: 900;
+    color: var(--purple);
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+.year-card.active .year-number {
+    color: var(--yellow);
+}
+
+.year-name {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+.year-card strong {
+    display: block;
+    font-size: 25px;
+}
+
+.year-card:not(.active) strong {
+    color: var(--purple);
+}
+
+/* -------------------------
+   PARTICIPANTS SECTION
+------------------------- */
+
+.participants-section {
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 28px;
+    overflow: hidden;
+}
+
+.participants-header {
+    margin-bottom: 20px;
+}
+
+.participants-header h2 {
+    font-size: 24px;
+}
+
+.participants-header p {
+    color: var(--gray);
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* -------------------------
+   FILTERS
+------------------------- */
+
+.filter-container {
+    display: grid;
+    grid-template-columns: 1fr 170px 170px 90px;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f7f5fa;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.search-box input,
+.filter-box select {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #d7d3de;
+    background: white;
+    border-radius: 9px;
+    padding: 0 13px;
+    outline: none;
+    font-size: 13px;
+    color: var(--black);
+}
+
+.search-box input {
+    padding-left: 38px;
+}
+
+.search-box input:focus,
+.filter-box select:focus {
+    border-color: var(--purple);
+    box-shadow: 0 0 0 3px rgba(106, 27, 177, 0.10);
+}
+
+.filter-box label {
+    display: block;
+    font-size: 10px;
+    color: var(--gray);
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.filter-box select {
+    height: 38px;
+    cursor: pointer;
+}
+
+.reset-button {
+    height: 44px;
+    border: none;
+    border-radius: 9px;
+    background: var(--purple);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+    align-self: end;
+}
+
+.reset-button:hover {
+    background: var(--purple-dark);
+    transform: translateY(-1px);
+}
+
+/* -------------------------
+   TABLE
+------------------------- */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 11px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 720px;
+}
+
+thead {
+    background:
+        linear-gradient(
+            90deg,
+            var(--purple-dark),
+            var(--purple)
+        );
+    color: white;
+}
+
+th {
+    padding: 14px 13px;
+    text-align: left;
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    white-space: nowrap;
+}
+
+th:first-child {
+    text-align: center;
+    width: 50px;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #eeeaf1;
+    font-size: 13px;
+    color: #36323c;
+}
+
+tbody tr {
+    transition: 0.15s ease;
+}
+
+tbody tr:hover {
+    background: #faf7fd;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+td:first-child {
+    text-align: center;
+    color: var(--gray);
+    font-weight: bold;
+}
+
+/* -------------------------
+   SEX BADGES
+------------------------- */
+
+.sex-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 35px;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.sex-male {
+    background: #e7f1ff;
+    color: var(--blue);
+}
+
+.sex-female {
+    background: #f7e9ff;
+    color: var(--purple);
+}
+
+/* -------------------------
+   PAYMENT BADGES
+------------------------- */
+
+.payment-badge,
+.paid,
+.unpaid {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 11px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.paid {
+    background: var(--green-light);
+    color: var(--green);
+}
+
+.unpaid {
+    background: var(--red-light);
+    color: var(--red);
+}
+
+/* -------------------------
+   MOBILE PARTICIPANTS
+------------------------- */
+
+.mobile-participants {
+    display: none;
+}
+
+/* -------------------------
+   NO RESULTS
+------------------------- */
+
+.no-results {
+    text-align: center;
+    padding: 50px 20px;
+    color: var(--gray);
+}
+
+.no-results-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #f0e7fa;
+    color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 25px;
+}
+
+.no-results h3 {
+    color: var(--black);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.no-results p {
+    font-size: 13px;
+}
+
+/* -------------------------
+   INFO SECTION
+------------------------- */
+
+.info-section {
+    margin-top: 25px;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #fff9df;
+    border: 1px solid #f2dc73;
+    border-left: 5px solid var(--yellow);
+    border-radius: 12px;
+    padding: 18px 20px;
+}
+
+.info-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 19px;
+}
+
+.info-card h3 {
+    font-size: 15px;
+    color: var(--black);
+    margin-bottom: 3px;
+}
+
+.info-card p {
+    font-size: 12px;
+    color: #686053;
+}
+
+/* -------------------------
+   FOOTER
+------------------------- */
+
+.main-footer {
+    background:
+        linear-gradient(
+            135deg,
+            #160b22,
+            var(--purple-dark)
+        );
+    color: white;
+    border-top: 4px solid var(--yellow);
+}
+
+.footer-content {
+    max-width: 1200px;
+    width: 94%;
+    margin: auto;
+    padding: 30px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content strong {
+    font-size: 16px;
+}
+
+.footer-content p {
+    color: #c9bed2;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.footer-count {
+    text-align: right;
+}
+
+.footer-count span {
+    display: block;
+    color: #c9bed2;
+    font-size: 11px;
+}
+
+.footer-count strong {
+    color: var(--yellow);
+    font-size: 26px;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    width: 94%;
+    margin: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.footer-bottom p {
+    color: #a99eaf;
+    font-size: 11px;
+}
+
+/* -------------------------
+   SCROLLBAR
+------------------------- */
+
+.table-wrapper::-webkit-scrollbar {
+    height: 7px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+    background: #f1eef4;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background: var(--purple);
+    border-radius: 10px;
+}
+
+/* -------------------------
+   TABLET
+------------------------- */
+
+@media (max-width: 950px) {
+
+    .year-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .filter-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .search-box {
+        grid-column: span 2;
+    }
+
+    .reset-button {
+        width: 100%;
+    }
+}
+
+/* -------------------------
+   MOBILE
+------------------------- */
+
+@media (max-width: 700px) {
+
+    body {
+        background: #f5f3f8;
+    }
+
+    .main-header {
+        padding: 22px 16px;
+    }
+
+    .header-content {
+        gap: 13px;
+    }
+
+    .department-logo {
+        width: 65px;
+        height: 65px;
+        padding: 5px;
+        border-width: 2px;
+    }
+
+    .small-title {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .header-text h1 {
+        font-size: 22px;
+    }
+
+    .header-text > p:last-child {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 94%;
+        margin-top: 20px;
+    }
+
+    .welcome-section {
+        padding: 20px;
+        border-left-width: 4px;
+    }
+
+    .welcome-section h2,
+    .section-heading h2 {
+        font-size: 20px;
+    }
+
+    .statistics-grid {
+        grid-template-columns: 1fr;
+        gap: 11px;
+        margin-bottom: 25px;
+    }
+
+    .stat-card {
+        padding: 16px;
+    }
+
+    .stat-icon {
+        width: 43px;
+        height: 43px;
+        font-size: 19px;
+    }
+
+    .stat-card strong {
+        font-size: 24px;
+    }
+
+    .year-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .year-card {
+        padding: 16px 13px;
+    }
+
+    .year-card:first-child {
+        grid-column: span 2;
+    }
+
+    .year-name {
+        font-size: 12px;
+    }
+
+    .year-card strong {
+        font-size: 21px;
+    }
+
+    .participants-section {
+        padding: 18px 14px;
+    }
+
+    .participants-header h2 {
+        font-size: 20px;
+    }
+
+    .filter-container {
+        grid-template-columns: 1fr;
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .search-box {
+        grid-column: auto;
+    }
+
+    .filter-box select {
+        height: 42px;
+    }
+
+    .reset-button {
+        height: 42px;
+    }
+
+    /* Hide desktop table on mobile */
+    .table-wrapper {
+        display: none;
+    }
+
+    /* Show mobile cards */
+    .mobile-participants {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .participant-card {
+        background: white;
+        border: 1px solid var(--border);
+        border-left: 4px solid var(--purple);
+        border-radius: 11px;
+        padding: 14px;
+        box-shadow: 0 4px 12px rgba(40, 15, 60, 0.05);
+    }
+
+    .participant-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .participant-number {
+        color: var(--gray);
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .participant-name {
+        font-size: 14px;
+        font-weight: 800;
+        color: var(--black);
+        margin-top: 2px;
+    }
+
+    .participant-details {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        align-items: center;
+    }
+
+    .participant-detail {
+        font-size: 10px;
+        color: var(--gray);
+        background: #f5f3f7;
+        padding: 5px 8px;
+        border-radius: 6px;
+    }
+
+    .participant-detail strong {
+        color: var(--black);
+    }
+
+    .info-card {
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .info-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-count {
+        text-align: left;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* -------------------------
+   SMALL MOBILE
+------------------------- */
+
+@media (max-width: 420px) {
+
+    .header-text h1 {
+        font-size: 19px;
+    }
+
+    .department-logo {
+        width: 58px;
+        height: 58px;
+    }
+
+    .welcome-section p {
+        font-size: 12px;
+    }
+
+    .year-grid {
+        gap: 8px;
+    }
+
+    .year-card {
+        padding: 14px 10px;
+    }
+
+    .year-name {
+        font-size: 11px;
+    }
+
+    .year-number {
+        font-size: 10px;
+    }
+
+    .participants-section {
+        padding: 15px 10px;
+    }
+}
+
+/* -------------------------
+   PRINT
+------------------------- */
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .filter-container,
+    .reset-button,
+    .year-section,
+    .info-section {
+        display: none !important;
+    }
+
+    .main-header {
+        color: black;
+        background: white;
+        border-bottom: 2px solid black;
+    }
+
+    .participants-section {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .main-footer {
+        background: white;
+        color: black;
+        border-top: 1px solid black;
+    }
+
+    .mobile-participants {
+        display: none !important;
+    }
+
+    .table-wrapper {
+        display: block !important;
+    }
+}
