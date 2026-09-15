@@ -18,7 +18,7 @@ const participants = [
     { year: "First Year", last: "AJERO", first: "NATHANIEL JOSEF", mi: "GERONA", gender: "M", paid: true },
     { year: "First Year", last: "ARMILLO", first: "MARIELLE", mi: "BUCADON", gender: "F", paid: false },
     { year: "First Year", last: "BARLISO", first: "STEPHANIE MARIS", mi: "SOSTINO", gender: "F", paid: true },
-    { year: "First Year", last: "BAYOBO", first: "JAYCRIS", mi: "WABINA", gender: "M", paid: false },
+    { year: "First Year", last: "BAYOBO", first: "JAYCRIS", mi: "WABINA", gender: "M", paid: true },
     { year: "First Year", last: "CABALUNA", first: "KIMBERLY", mi: "TAN-AWON", gender: "F", paid: true },
     { year: "First Year", last: "CAÑETE", first: "MARK DANIEL", mi: "", gender: "M", paid: true },
     { year: "First Year", last: "CASERO", first: "MARJANEH", mi: "PASCO", gender: "F", paid: true },
@@ -44,7 +44,7 @@ const participants = [
     { year: "First Year", last: "MANIB", first: "CHRISTIAN", mi: "AMELIC", gender: "M", paid: false },
     { year: "First Year", last: "MARANGA", first: "JOHN DAVE", mi: "PILLEJERA", gender: "M", paid: false },
     { year: "First Year", last: "MARCES", first: "EDDIE JR.", mi: "ABAR", gender: "M", paid: false },
-    { year: "First Year", last: "MEÑOZA", first: "MARIAN JEE", mi: "VILLARMIA", gender: "F", paid: false },
+    { year: "First Year", last: "MEÑOZA", first: "MARIAN JEE", mi: "VILLARMIA", gender: "F", paid: true },
     { year: "First Year", last: "NIERE", first: "MERLOE YAEL", mi: "FERRANDO", gender: "F", paid: false },
     { year: "First Year", last: "OLE", first: "FHEBIE GRACE", mi: "BONAJOS", gender: "F", paid: true },
     { year: "First Year", last: "ORBITA", first: "JAY-AR, JR.", mi: "CAÑARES", gender: "F", paid: true },
@@ -96,7 +96,7 @@ const participants = [
     { year: "Second Year", last: "PELINGON", first: "CHUCKY", mi: "RUELINAS", gender: "M", paid: false },
     { year: "Second Year", last: "PEREZ", first: "JHE-ANN", mi: "BAREÑA", gender: "F", paid: false },
     { year: "Second Year", last: "PLAZA", first: "JOGAR", mi: "", gender: "M", paid: false },
-    { year: "Second Year", last: "POLINAR", first: "JHUNRHOI", mi: "DAYDAY", gender: "M", paid: false },
+    { year: "Second Year", last: "POLINAR", first: "JHUNRHOI", mi: "DAYDAY", gender: "M", paid: true },
     { year: "Second Year", last: "SAB", first: "JORINE", mi: "BENSON", gender: "F", paid: true },
     { year: "Second Year", last: "SALE", first: "AARON", mi: "CALAMBA", gender: "M", paid: true },
     { year: "Second Year", last: "SANCHEZ", first: "JOHN PATRICK", mi: "SINGSON", gender: "M", paid: false },
@@ -120,7 +120,7 @@ const participants = [
     { year: "Third Year", last: "GUBANTES", first: "ODRAN NOEL", mi: "YBAÑEZ", gender: "M", paid: true },
     { year: "Third Year", last: "IBABAO", first: "ASHLEY DAVE", mi: "ORFRECIO", gender: "F", paid: true },
     { year: "Third Year", last: "IMPERIAL", first: "NIKKI", mi: "TAMPUS", gender: "F", paid: true },
-    { year: "Third Year", last: "JANEO", first: "JOHN VICTOR", mi: "SAYABO", gender: "M", paid: false },
+    { year: "Third Year", last: "JANEO", first: "JOHN VICTOR", mi: "SAYABO", gender: "M", paid: true },
     { year: "Third Year", last: "JAVELLANA", first: "JEAH", mi: "ENDRINA", gender: "F", paid: true },
     { year: "Third Year", last: "LETIC", first: "MYLENE", mi: "A", gender: "F", paid: true },
     { year: "Third Year", last: "LIM", first: "JEFF NICHOLSON", mi: "TAPINET", gender: "M", paid: true },
@@ -128,10 +128,10 @@ const participants = [
 
     // Blank row in original list intentionally excluded
 
-    { year: "Third Year", last: "PEMENTERA", first: "JOHN LESTER", mi: "ALEGADO", gender: "M", paid: false },
+    { year: "Third Year", last: "PEMENTERA", first: "JOHN LESTER", mi: "ALEGADO", gender: "M", paid: true },
     { year: "Third Year", last: "RODIS", first: "ANGELIC", mi: "RENEGADO", gender: "F", paid: true },
     { year: "Third Year", last: "SARDONCILLO", first: "NILBEN", mi: "MANTOS", gender: "M", paid: true },
-    { year: "Third Year", last: "SIBULAN", first: "FRANCIS JOHN", mi: "PAVIA", gender: "M", paid: false },
+    { year: "Third Year", last: "SIBULAN", first: "FRANCIS JOHN", mi: "PAVIA", gender: "M", paid: true },
     { year: "Third Year", last: "TANQUE", first: "SHINOVAH ISHI", mi: "LUCERO", gender: "F", paid: true },
 
 
